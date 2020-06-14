@@ -14,3 +14,9 @@ export const simulateHttpRequest = article => {
     }, 3000)
   }
 }
+
+export const deleteArticle =  id => {
+  return {
+    type: actionTypes.DELETE_ARTICLE,
+    id
+  }}
