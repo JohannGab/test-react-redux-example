@@ -19,12 +19,15 @@ const reducer = (state = initialState, action) => {
         ...state,
         articles: state.articles.concat(newArticle),
       }
+
+      case actionTypes.EDIT_ARTICLE:          
       case actionTypes.DELETE_ARTICLE:
         return  {
           ...state,
           articles: state.articles.filter(post => {
             return post.id !== action.id
           })}
+
   default: 
     return state
   }

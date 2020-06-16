@@ -15,6 +15,13 @@ export const simulateHttpRequest = article => {
   }
 }
 
+export const editArticle = article => {
+  return {
+    type: actionTypes.EDIT_ARTICLE,
+    article,
+  }
+}
+
 export const deleteArticle =  id => {
   return {
     type: actionTypes.DELETE_ARTICLE,

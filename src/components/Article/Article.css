@@ -3,4 +3,18 @@
   margin: auto;
   border-bottom: 1px solid #333;
   color: #333;
+  text-align: center;
 }
+
+.modif {
+  display: block;
+}
+
+.buttonDelete {
+  margin: 0 0 1rem 0;
+}
+
+.buttonDelete:hover {
+  background-color: red;
+}
+
